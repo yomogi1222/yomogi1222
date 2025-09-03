@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/perple-daria.jpg), url(images/pink-daria.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  /* アニメーションを設定 */
+    animation: image_anime 3s ease; 
+  /* forwardsを設定すると100%の状態で止まる */
+    animation-fill-mode: forwards; 
+  /* animationを開始する時間を設定 */
+    animation-delay: 7s; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainmenu {
+    background-color: aliceblue;
+    padding: 30px;
+    filter: opacity(60%);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 3s ease, transform 3s ease;
+
+    a:link {
+        color: darkblue;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:active {
+        color: #676066;
+    }
+}
+
+.mainmenu.fade-in {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.mainmenu ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    gap: 30px;
+}
+
+.mainmenu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: darkblue;
+    font-style: italic;
+}
+
+a:link {
+    color: darkblue;
+}
+
+header {
+    padding: 240px;
+    justify-items: left;
+    text-shadow: 5px 8px 20px #fff;
+}
+
+.site-name {
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 6s ease, transform 6s ease;
+}
+
+.site-name.fade-in {
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+h1 {
+    font-size: 55px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+footer {
+    margin-top: auto;
+}
+
+@keyframes image_anime {
+  100% {
+    /* 切り替え後の画像 */
+    background-image: url(images/pink-daria.jpg); 
+  }
+}
+
+@media screen and (max-width:600px) {
+
+    header h1 {
+        width: 100%;
+        justify-items: left;
+        margin-left: 0%;
+        padding-left: 0%;
+        text-shadow: 5px 8px 20px #fff;
+    }
+
+    header p {
+        width: 100%;
+        justify-items: left;
+        margin-left: 0%;
+        padding-left: 0%;
+        color: #9670cf;
+        text-shadow: 3px 5px 12px #fff;
+    }
+
+
+}

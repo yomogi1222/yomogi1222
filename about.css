@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/perple-daria.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    color: blueviolet;
+    margin: 20px;
+}
+
+.mainmenu {
+    background-color: aliceblue;
+    padding: 30px;
+    filter: opacity(60%);
+    a:link {
+        color: darkblue;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:active {
+        color: #676066;
+    }
+}
+
+.mainmenu ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    gap: 30px;
+}
+
+.mainmenu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: darkblue;
+    font-style: italic;
+}
+
+#menu {
+    margin: 20px;
+    text-shadow: 5px 3px 15px #f87f0e;
+    a:link{
+        color:#522d03;
+    }
+    a:visited {
+        color: #76b8ee;
+    }
+    a:hover {
+        color: #780e60;
+    }
+    a:active {
+        color: #676066;
+    }
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+#menu ul li {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #522d03;
+    font-size: 20px;
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrap {
+    position: relative;
+}
+
+#experience {
+    background-image: url(images/italy-town.jpg);
+    background-repeat: no-repeat;
+    padding: 240px;
+    text-align: left;
+    color: aliceblue;
+    margin: 20px;
+    margin-left: 180px;
+}
+
+.experience {
+    opacity: 0;
+    transform: translateX(-16%);
+    transition: opacity 5s ease, transform 5s ease;
+}
+
+.experience.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#Omoi {
+    background-image: url(images/write-candle.jpg);
+    background-repeat: no-repeat;
+    padding: 240px;
+    text-align: right;
+    color: aliceblue;
+    margin: 20px;
+    margin-right: 180px;
+}
+
+.Omoi {
+    opacity: 0;
+    transform: translateX(16%);
+    transition: opacity 5s ease, transform 5s ease;
+}
+
+.Omoi.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#about {
+    color: aliceblue;
+    margin: 20px;
+    background-image: url(images/backflower.jpg);
+    background-size: 100%;
+    padding: 30px
+}
+
+.about {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 5s ease, transform 5s ease;
+}
+
+.about.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p {
+    font-size: 14px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+@media screen and (max-width:800px) {
+
+    body {
+        background-position: center;
+        background-repeat: repeat;
+    }
+
+    .wrap {
+        justify-items: center;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .mainmenu{
+        width: 100%;
+    }
+
+    #menu ul li{
+        a:link {
+        color: #b47328;
+    }
+    a:visited{
+        color: #b47328;
+    }
+    a:hover {
+        color: #780e60;
+    }
+    a:active {
+        color: #676066;
+    }
+    }
+
+    #experience,#Omoi{
+        margin: 20px 0%;
+        padding: 30%;
+    }
+}

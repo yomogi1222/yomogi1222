@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/perple-daria.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    color: blueviolet;
+    margin: 20px;
+}
+
+.mainmenu {
+    background-color: aliceblue;
+    padding: 30px;
+    filter: opacity(60%);
+
+    a:link {
+        color: darkblue;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:active {
+        color: #676066;
+    }
+}
+
+.mainmenu ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    gap: 30px;
+}
+
+.mainmenu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: darkblue;
+    font-style: italic;
+}
+
+.works h2 {
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 8px 20px #1d0101;
+    color: #dbd8db;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 8%;
+    padding: 0px;
+}
+
+.blinking{
+    text-align: center;
+    -webkit-animation:blink 1s ease-in-out infinite alternate;
+    -moz-animation:blink 1s ease-in-out infinite alternate;
+    animation:blink 1s ease-in-out infinite alternate;
+}
+
+.blinking img{
+    width: 7%;
+    margin-top: 5%;
+    padding-top: 5%;
+    margin: 0%;
+}
+
+
+.slide{
+    display: flex;
+    background-image: url(images/frame1.png);
+    background-repeat: no-repeat;
+    background-size: 91%;
+    background-position: center;
+    margin-top: -3%;
+    padding: 10% 5%;
+}
+
+
+.slide img{
+    width:43vw;
+    padding: 4%;
+}
+
+
+footer {
+    margin-top: auto;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        width: 100%;
+    }
+
+    works h2 {
+        color: #514b58;
+    }
+
+    .works{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .works img {
+        justify-content: space-between;
+        margin:0%;
+    }
+}
+
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

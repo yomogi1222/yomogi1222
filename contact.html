@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://github.com/elad2412/the-new-css-reset.git">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html">
+                <h1>Maho's File</h1>
+            </a>
+        </header>
+        <nav class="mainmenu">
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="works.html">works</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <form target="_blank" rel="noopener noreferrer" action="https://formsubmit.co/mahoyomo@gmail.com" method="POST">
+            <section class="contactform">
+                <input type="hidden" id="_to" value="yomogi.b.p.c@gmail.com">
+                <input type="hidden" id="_from" value="yomogi.b.p.c@gmail.com">
+                <label>名前</label>
+                <input type="text" class="name" name="お名前" required><br>
+                <label>e-mail address</label>
+                <input type="email" class="mail address" name="e-mail address" required><br>
+                <label>TEL</label>
+                <input type="tel" class="tel" name="TEL" required><br>
+                <p>性別</p>
+                <ul>
+                    <li><input type="checkbox" name="性別" value="male"> <label>male</label></li>
+                    <li><input type="checkbox" name="性別" value="female"> <label>female</label></li>
+                </ul><br>
+                <label>お問い合わせ</label>
+                <input type="text" class="request" name="お問い合わせ" required>
+                <div class="submit">
+                    <label></label>
+                    <input type="submit" value="送信/Submit"><input type="reset" value="書き直し／Reset">
+                </div>
+            </section>
+        </form>
+        <footer>
+            <nav class="mainmenu">
+                <ul>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="works.html">works</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
