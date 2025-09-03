@@ -78,6 +78,14 @@ header {
     margin: 2%;
 }
 
+.attention {
+    text-align: end;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    color: red;
+    font-size: 18px;
+}
+
 footer {
     margin-top: auto;
 }
@@ -87,4 +95,5 @@ footer {
         /* 切り替え後の画像 */
         background-image: url(images/pink-daria.jpg);
     }
+
 }
