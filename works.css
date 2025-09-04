@@ -123,12 +123,15 @@ footer {
         justify-content: center;
         display: block;
         box-sizing: border-box;
-        margin-bottom: 0;
     }
 
     .works img {
         justify-content: space-between;
         margin:0%;
+    }
+
+    .slide{
+        margin-bottom:0;
     }
 }
 
@@ -145,6 +148,7 @@ footer {
     100% {opacity:1;}
 
 }
+
 
 
 
