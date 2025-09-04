@@ -108,7 +108,7 @@ footer {
     header{
         padding: 50px 180px;
         width: 80%;
-        margin: 10% auto;
+        margin: 0;
     }
 
     header h1 {
@@ -128,6 +128,7 @@ footer {
         text-shadow: 3px 5px 12px #fff;
     }
 }
+
 
 
 
