@@ -131,7 +131,7 @@ footer {
     }
 
     footer{
-        margin: 0;
+        margin: auto;
     }
 }
 
@@ -148,3 +148,4 @@ footer {
     100% {opacity:1;}
 
 }
+
