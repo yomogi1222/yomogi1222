@@ -115,6 +115,7 @@ footer {
 
     .works h2 {
         color: #514b58;
+        margin-top:20%;
     }
 
     .works{
@@ -130,9 +131,6 @@ footer {
         margin:0%;
     }
 
-    .slide{
-        margin-bottom:0;
-    }
 }
 
 @-webkit-keyframes blink{
@@ -148,6 +146,7 @@ footer {
     100% {opacity:1;}
 
 }
+
 
 
 
