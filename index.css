@@ -105,9 +105,12 @@ footer {
 
 @media screen and (max-width:600px) {
 
+    body{
+        background-size:contain;
+    }
+
     header{
-        padding: 150px;
-        width: 50%;
+        padding: 180px;
         margin: 0;
     }
 
@@ -128,6 +131,7 @@ footer {
         text-shadow: 3px 5px 12px #fff;
     }
 }
+
 
 
 
