@@ -106,7 +106,7 @@ footer {
 @media screen and (max-width:600px) {
 
     header{
-        padding: 180px 180px 50px 180px
+        padding: 50px 180px;
     }
 
     header h1 {
@@ -126,6 +126,7 @@ footer {
         text-shadow: 3px 5px 12px #fff;
     }
 }
+
 
 
 
